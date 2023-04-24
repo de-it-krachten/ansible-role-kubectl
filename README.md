@@ -3,7 +3,7 @@
 
 # ansible-role-kubectl
 
-<basic role description>
+Installs kubectl on a variety of platforms
 
 
 

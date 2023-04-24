@@ -1,0 +1,13 @@
+---
+
+# Generic
+generic:
+  role: ansible-role-kubectl
+  role_short: kubectl
+  role_description: |
+    Installs kubectl on a variety of platforms
+  collections: []
+
+molecule:
+  requirements:
+    roles_extra: []
