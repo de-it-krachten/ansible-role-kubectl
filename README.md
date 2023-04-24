@@ -3,7 +3,7 @@
 
 # ansible-role-kubectl
 
-<basic role description>
+Installs kubectl on a variety of platforms
 
 
 
@@ -49,13 +49,17 @@ kubectl_api: https://api.github.com/repos/kubernetes/kubectl
 # Github CLI - repo
 kubectl_repo: https://github.com/kubernetes/kubectl
 
-# Kubectl 
+# Kubectl
 kubectl_base_url: https://storage.googleapis.com/kubernetes-release/release
 
 # Lookup table for architecture
 kubectl:
   architecture:
     x86_64: amd64
+    i386: i386
+    armv6l: arm
+    armv7l: arm
+    aarch64: arm64
   system:
     Linux: linux
     Darwin: darwin

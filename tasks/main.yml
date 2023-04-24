@@ -1,0 +1,57 @@
+---
+
+- name: Lookup alternative system & architecture
+  ansible.builtin.set_fact:
+    kubectl_system: "{{ kubectl['system'][ansible_system] }}"
+    kubectl_architecture: "{{ kubectl['architecture'][ansible_architecture] | default(ansible_architecture) }}"
+
+- name: Get kubectl version installed
+  ansible.builtin.shell: |
+    set -o pipefail
+    {{ kubectl_path }} version --short | awk '/^Client Version:/ {print $NF}'
+  args:
+    executable: /bin/bash
+  changed_when: no
+  failed_when: no
+  check_mode: no
+  register: kubectl_version_installed
+
+- name: Set installed version as fact
+  ansible.builtin.set_fact:
+    kubectl_version_installed: "{{ 'N/A' if kubectl_version_installed.stdout | length == 0 else kubectl_version_installed.stdout }}"
+
+- name: Retrieve latest stable version
+  ansible.builtin.uri:
+    url: "{{ kubectl_base_url }}/stable.txt"
+    return_content: yes
+  register: __kubectl_version_info
+
+- name: Get latest release tag
+  ansible.builtin.set_fact:
+    kubectl_version_latest: "{{ __kubectl_version_info['content'] }}"
+
+- name: Replace 'latest' by the actual version
+  ansible.builtin.set_fact:
+    kubectl_version: "{{ kubectl_version_latest }}"
+  when: kubectl_version == 'latest'
+
+- name: Show kubectl release
+  ansible.builtin.debug:
+    msg:
+      - "kubectl latest release    : {{ kubectl_version_latest }}"
+      - "kubectl requested release : {{ kubectl_version }}"
+      - "kubectl installed release : {{ kubectl_version_installed }}"
+
+- name: Install/update kubectl
+  when: kubectl_version != kubectl_version_installed
+  block:
+
+    - name: Download the preferred kubectl version
+      ansible.builtin.get_url:
+        url: "{{ kubectl_base_url }}/{{ kubectl_version }}/bin/{{ kubectl_system }}/{{ kubectl_architecture }}/kubectl"
+        dest: "{{ kubectl_path }}"
+        force: yes
+        owner: root
+        group: root
+        mode: '0555'
+      become: yes
