@@ -83,8 +83,6 @@ kubectl_mode: '0755'
 - name: sample playbook for role 'kubectl'
   hosts: all
   become: "yes"
-  roles:
-    - deitkrachten.showinfo
   tasks:
     - name: Include role 'kubectl'
       ansible.builtin.include_role:
