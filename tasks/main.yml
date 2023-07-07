@@ -24,6 +24,10 @@
   ansible.builtin.uri:
     url: "{{ kubectl_base_url }}/stable.txt"
     return_content: yes
+  environment:
+    https_proxy: "{{ https_proxy | default('') }}"
+    http_proxy: "{{ http_proxy | default('') }}"
+    no_proxy: "{{ no_proxy | default('') }}"
   register: __kubectl_version_info
 
 - name: Get latest release tag
@@ -55,3 +59,7 @@
         group: root
         mode: '0555'
       become: yes
+      environment:
+        https_proxy: "{{ https_proxy | default('') }}"
+        http_proxy: "{{ http_proxy | default('') }}"
+        no_proxy: "{{ no_proxy | default('') }}"
