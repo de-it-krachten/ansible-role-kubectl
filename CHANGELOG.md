@@ -1,3 +1,10 @@
+# [1.2.0](https://github.com/de-it-krachten/ansible-role-kubectl/compare/v1.1.0...v1.2.0) (2023-08-14)
+
+
+### Features
+
+* Update supported platforms & CI ([f09e81c](https://github.com/de-it-krachten/ansible-role-kubectl/commit/f09e81cc442bc7b1ba37db2ee45c60b66a922430))
+
 # [1.1.0](https://github.com/de-it-krachten/ansible-role-kubectl/compare/v1.0.0...v1.1.0) (2023-07-07)
 
 
