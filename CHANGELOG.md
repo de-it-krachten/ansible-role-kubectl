@@ -1,3 +1,10 @@
+# [1.3.0](https://github.com/de-it-krachten/ansible-role-kubectl/compare/v1.2.0...v1.3.0) (2024-06-03)
+
+
+### Features
+
+* Add support for Ubuntu 24.04 LTS + Fedora 40 ([40ec646](https://github.com/de-it-krachten/ansible-role-kubectl/commit/40ec6467c9d8e194f3a70d5b4679e266c80c6fd9))
+
 # [1.2.0](https://github.com/de-it-krachten/ansible-role-kubectl/compare/v1.1.0...v1.2.0) (2023-08-14)
 
 
