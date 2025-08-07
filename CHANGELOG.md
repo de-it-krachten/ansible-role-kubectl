@@ -1,3 +1,14 @@
+# [1.5.0](https://github.com/de-it-krachten/ansible-role-kubectl/compare/v1.4.0...v1.5.0) (2025-08-07)
+
+
+### Features
+
+* Add support for AlmaLinux 10 ([4bb77e4](https://github.com/de-it-krachten/ansible-role-kubectl/commit/4bb77e4870cc618cfa19ebc60914123fec029c8f))
+* Add support for Debian 13 (Trixie) ([2b91158](https://github.com/de-it-krachten/ansible-role-kubectl/commit/2b91158a2dbb967ff0f2e2939daf0d16f9fe2564))
+* Add support for OracleLinux 10 ([26481d3](https://github.com/de-it-krachten/ansible-role-kubectl/commit/26481d3fb514ea9df125752e92a30de9602d5b19))
+* Add support for Red Hat Enterprise Linux 10 ([df385a0](https://github.com/de-it-krachten/ansible-role-kubectl/commit/df385a00d34a2af4cafef6255e8df12646371b2e))
+* Add support for RockyLinux 10 ([e696393](https://github.com/de-it-krachten/ansible-role-kubectl/commit/e69639364cda2156029843deb410152507669ac9))
+
 # [1.4.0](https://github.com/de-it-krachten/ansible-role-kubectl/compare/v1.3.0...v1.4.0) (2024-12-29)
 
 
