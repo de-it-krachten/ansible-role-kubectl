@@ -8,7 +8,7 @@
 - name: Get kubectl version installed
   ansible.builtin.shell: |
     set -o pipefail
-    {{ kubectl_path }} version --short | awk '/^Client Version:/ {print $NF}'
+    {{ kubectl_path }} version | awk '/^Client Version:/ {print $NF}'
   args:
     executable: /bin/bash
   changed_when: no
