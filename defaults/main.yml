@@ -7,7 +7,7 @@ kubectl_api: https://api.github.com/repos/kubernetes/kubectl
 kubectl_repo: https://github.com/kubernetes/kubectl
 
 # Kubectl
-kubectl_base_url: https://storage.googleapis.com/kubernetes-release/release
+kubectl_base_url: https://dl.k8s.io/release
 
 # Lookup table for architecture
 kubectl:
