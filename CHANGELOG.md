@@ -1,3 +1,18 @@
+# [1.6.0](https://github.com/de-it-krachten/ansible-role-kubectl/compare/v1.5.0...v1.6.0) (2026-03-15)
+
+
+### Bug Fixes
+
+* Update kubectl binary locations ([9c57608](https://github.com/de-it-krachten/ansible-role-kubectl/commit/9c57608911b6e643bd191de95859d0c6e5041bbc))
+
+
+### Features
+
+* Added support for Fedora 43 ([6f15eec](https://github.com/de-it-krachten/ansible-role-kubectl/commit/6f15eec07c06327f949508b5c26611af69ebc587))
+* Drop support for Fedora 41 ([37cc177](https://github.com/de-it-krachten/ansible-role-kubectl/commit/37cc177c747d4ce961fd2ecfbd5bafdddeb12cb0))
+* Drop support for openSUSE Leap 15 ([531d660](https://github.com/de-it-krachten/ansible-role-kubectl/commit/531d66041b76a721ec2b0cd9eef0a7b39e9081c8))
+* Drop support for SUSE Linux Enterprise 15 ([88b733e](https://github.com/de-it-krachten/ansible-role-kubectl/commit/88b733e72dff2a67dd4fd14a41dcb0e9bfd70de0))
+
 # [1.5.0](https://github.com/de-it-krachten/ansible-role-kubectl/compare/v1.4.0...v1.5.0) (2025-08-07)
 
 
