@@ -1,3 +1,13 @@
+# [1.7.0](https://github.com/de-it-krachten/ansible-role-kubectl/compare/v1.6.0...v1.7.0) (2026-07-26)
+
+
+### Features
+
+* Add support for ansible-core 2.20+ ([b3aa3d4](https://github.com/de-it-krachten/ansible-role-kubectl/commit/b3aa3d442fadc43c183fe0cd2556cf778f7cdc74))
+* Added support for Fedora 44 ([12ba0a8](https://github.com/de-it-krachten/ansible-role-kubectl/commit/12ba0a8bb43585f6330a66dcbebab780d45e3f3b))
+* Added support for Ubuntu 26.04 LTS ([37db3f3](https://github.com/de-it-krachten/ansible-role-kubectl/commit/37db3f3e49127be5206949100ed12967228af8ac))
+* Drop support for Fedora 42 ([75e5930](https://github.com/de-it-krachten/ansible-role-kubectl/commit/75e59302b31cca56e4b197ebed4c2eda3edccbb9))
+
 # [1.6.0](https://github.com/de-it-krachten/ansible-role-kubectl/compare/v1.5.0...v1.6.0) (2026-03-15)
 
 
