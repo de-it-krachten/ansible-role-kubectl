@@ -1,3 +1,10 @@
+# [1.8.0](https://github.com/de-it-krachten/ansible-role-kubectl/compare/v1.7.0...v1.8.0) (2026-10-30)
+
+
+### Features
+
+* Drop support for Debian 11 (Bullseye) ([37615d0](https://github.com/de-it-krachten/ansible-role-kubectl/commit/37615d01cf27ed916133ab26659192be62351204))
+
 # [1.7.0](https://github.com/de-it-krachten/ansible-role-kubectl/compare/v1.6.0...v1.7.0) (2026-07-26)
 
 
